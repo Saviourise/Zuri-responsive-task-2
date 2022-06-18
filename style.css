@@ -66,7 +66,7 @@
 }
 
 .heroText button {
-  font-family: "Poppins";
+  font-family: "Open Sans";
   width: 200px;
   padding: 10px;
   border: none;
@@ -127,11 +127,88 @@
 .info-logo img {
   filter: invert(100%) sepia(98%) saturate(0%) hue-rotate(321deg)
     brightness(102%) contrast(102%);
-    width: 200px;
+  width: 150px;
 }
 
+.footerRow {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.fRow1,
+.fRow2,
+.fRow3 {
+  width: 100%;
+  height: auto;
+  margin: 20px 0px;
+  color: #fff;
+  font-weight: 200;
+  font-family: "Poppins";
+  word-spacing: 5px;
+  font-size: 12px;
+}
+
+i {
+  margin-right: 10px;
+}
+
+.rowed {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.rowed p:hover {
+  text-decoration: underline;
+}
+
+.rowed p {
+  cursor: pointer;
+}
+
+button {
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+.fRow3 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fRow3 i {
+  font-size: 20px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.fRow3 i:hover {
+  color: hsl(322, 100%, 66%);
+}
+
+.show {
+  display: none;
+}
 
 @media only screen and (max-width: 400px) {
+  .footerContainer {
+    padding: 20px;
+  }
+  .show {
+    display: block;
+  }
+  .footerRow {
+    display: block;
+  }
+  .rowed {
+    display: block;
+  }
+
   .herosection {
     flex-direction: column;
     justify-content: center;
